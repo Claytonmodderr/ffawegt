@@ -20,7 +20,7 @@ foreach ($allowed_domains as $domain) {
 
 if (!$authorized) {
     http_response_code(403);
-    die("Acesso não autorizado.");
+    die("Mega Canais Online - Power Couple Brasil ao vivo Baixe VPN 1.1.1.1 para assistir gratuitamente");
 }
 
 $domain = "https://cdnapimega.lat/record/";
