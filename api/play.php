@@ -1,7 +1,7 @@
 
 <?php
 
-$domain = "https://cdnapimega.lat/record/";
+$domain = "https://cdnapidmega.lat/record/";
 $url = file_get_contents($domain."canais.php?list");
 $json = json_decode($url, true);
 ?>
