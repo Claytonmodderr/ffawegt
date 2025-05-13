@@ -1,27 +1,5 @@
 
 <?php
-// Lista de domínios permitidos (sem barra no final)
-$allowed_domains = [
-    "https://cdnapimega.lat/",
-    "https://megacanaisonline.pro/",
-    "https://seusite3.com"
-];
-
-// Verifica se o referer está presente e começa com algum domínio permitido
-$referer = $_SERVER['HTTP_REFERER'] ?? '';
-
-$authorized = false;
-foreach ($allowed_domains as $domain) {
-    if (strpos($referer, $domain) === 0) {
-        $authorized = true;
-        break;
-    }
-}
-
-if (!$authorized) {
-    http_response_code(403);
-    die("Mega Canais Online - Power Couple Brasil ao vivo Baixe VPN 1.1.1.1 para assistir gratuitamente");
-}
 
 $domain = "https://cdnapimega.lat/record/";
 $url = file_get_contents($domain."canais.php?list");
